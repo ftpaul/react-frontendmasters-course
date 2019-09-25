@@ -1,30 +1,24 @@
 Arguments: 
-  /usr/local/Cellar/node/12.9.1/bin/node /usr/local/Cellar/yarn/1.17.3/libexec/bin/yarn.js add useDropdown
+  /usr/local/Cellar/node/12.8.1/bin/node /usr/local/Cellar/yarn/1.17.3/libexec/bin/yarn.js add -D cross-env
 
 PATH: 
-  /var/folders/00/9sqf4mrn39x_x8jqzf9fcg6m0000gn/T/yarn--1567873293439-0.33196403747489156:/Users/ftpaul/Desktop/Dev/adopt-me/node_modules/.bin:/Users/ftpaul/.config/yarn/link/node_modules/.bin:/usr/local/Cellar/node/12.9.1/libexec/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/Cellar/node/12.9.1/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/Cellar/node/12.9.1/bin/node_modules/npm/bin/node-gyp-bin:/Users/ftpaul/.rvm/gems/ruby-2.0.0-p247/bin:/Users/ftpaul/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/ftpaul/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/ftpaul/.rvm/bin:/Users/ftpaul/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 Yarn version: 
   1.17.3
 
 Node version: 
-  12.9.1
+  12.8.1
 
 Platform: 
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/useDropdown: Not found
-      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:66830:18)
-      at Request.self.callback (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:140464:22)
-      at Request.emit (events.js:209:13)
-      at Request.<anonymous> (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:141436:10)
-      at Request.emit (events.js:209:13)
-      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:141358:12)
-      at Object.onceWrapper (events.js:297:20)
-      at IncomingMessage.emit (events.js:214:15)
-      at endReadableNT (_stream_readable.js:1178:12)
-      at processTicksAndRejections (internal/process/task_queues.js:77:11)
+  Error: self signed certificate in certificate chain
+      at TLSSocket.onConnectSecure (_tls_wrap.js:1317:34)
+      at TLSSocket.emit (events.js:203:13)
+      at TLSSocket._finishInit (_tls_wrap.js:792:8)
+      at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:606:12)
 
 npm manifest: 
   {
@@ -48,11 +42,12 @@ npm manifest:
       "eslint-plugin-jsx-a11y": "^6.2.3",
       "eslint-plugin-react": "^7.14.3",
       "eslint-plugin-react-hooks": "^2.0.1",
+      "parcel-bundler": "^1.12.3",
       "prettier": "1.18.2"
     },
     "dependencies": {
       "@frontendmasters/pet": "^1.0.3",
-      "reac": "^0.0.0",
+      "fsevents": "^2.0.7",
       "react": "^16.9.0",
       "react-dom": "^16.9.0"
     }
@@ -703,6 +698,11 @@ Lockfile:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
     integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
+  
+  fsevents@^2.0.7:
+    version "2.0.7"
+    resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.0.7.tgz#382c9b443c6cbac4c57187cdda23aa3bf1ccfc2a"
+    integrity sha512-a7YT0SV3RB+DjYcppwVDLtn13UQnmg0SWZS7ezZD0UjnLwXmy8Zm21GMVGLaFGimIqcvyMQaOJBrop8MyOp1kQ==
   
   function-bind@^1.1.1:
     version "1.1.1"
